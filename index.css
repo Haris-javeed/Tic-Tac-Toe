@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 18px;
+}
+body{
+    min-height: 100vh;
+    max-height: 100%;    
+    background-color: #07000a;
+    display: grid;
+    grid-template-rows: 35% 1fr auto;
+}
+header{
+    padding:1.25rem;
+}
+header h1{
+    color: #fffcff;
+    font-size: 3.30rem;
+    text-align: center;
+    text-shadow: 0rem 0.1rem 1rem #df0eeb;
+}
+header p{
+    width: 100%;
+    color: white;
+    text-shadow: 0rem 0.1rem 1rem #df0eeb;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    padding:0 1.25rem;
+    font-size: 1.50rem;
+}
+header p span{
+    float: right;
+}
+div.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+div.container > div:first-child{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+div.container > div:first-child h2{
+    color: white;
+    font-size: 1.70rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-shadow: 0rem 0.1rem 1rem #df0eeb;
+}
+div.container div.box{
+    background:#e00eeb7d;
+    display: grid;
+    grid-template: repeat(3,100px) / repeat(3,100px);
+    box-shadow: 0rem 0rem 1rem #df0eeb;
+}
+div.container div.item{
+    background-color: #07000a;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-shadow: 0rem 0rem 1rem #df0eeb;
+}
+div.container div.win{
+    background-color: rgba(192, 180, 180, 0.301);
+}
+footer{
+    background-color: #df0eeb;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 5rem;
+}
+footer a{
+    color: black;
+    font-weight: 700;
+    
+}
+@media (max-width:500px){
+    header h1{
+        font-size: 2.70rem;
+    }
+    header p{
+        font-size: 1.1rem;
+        margin:1rem 0;
+    }
+    span{
+        display: block;
+        float: none;
+    }
+    div.container > div:first-child h2{
+        font-size: 1.50rem;
+    }
+    div.container div.box{
+    grid-template: repeat(3,70px) / repeat(3,70px);
+    }
+}
